@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+
+    <record id="sale_discount_manager" model="res.groups">
+        <field name="name">Discount Manager</field>
+    </record>
+
+
+</odoo>
