@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="inherit_res_partner_view" model="ir.ui.view">
+            <field name="name">res.partner.inherit</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//group/group/field[@name='phone']" position="after">
+                    <field name="birth_date"/>
+                </xpath>
+            </field>
+        </record>
+
+        <!-- <record forcecreate="True" id="ir_cron_employee_birth" model="ir.cron">
+            <field name="name">Employee Birthday scheduler</field>
+            <field eval="True" name="active"/>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+            <field eval="False" name="doall"/>
+            <field eval="'res.partner'" name="model"/>
+            <field eval="'send_birthday_email'" name="function"/>
+       
+        </record> -->
+
+    </data>
+</odoo>
