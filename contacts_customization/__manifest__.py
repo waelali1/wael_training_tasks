@@ -23,8 +23,7 @@ Key Features
                 'resource',
                 'web', 'contacts'],
     'data': [
-        'views/dob_inheritance.xml',
-        'data/cron_birthday_wish.xml'
+        'views/dob_inheritance.xml'
     ],
     'demo': [
     ],

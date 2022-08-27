@@ -22,10 +22,6 @@ Key Features
     'data': [
         'views/sales_orders_inheritance.xml',
         'reports/sale_report_inherit.xml',
-
-
-
-
     ],
     'demo': [
     ],
